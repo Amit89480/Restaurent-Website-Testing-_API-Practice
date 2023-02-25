@@ -23,7 +23,7 @@ const Usereducer = () => {
     const initialData = 10;
 
     const[state,dispatch]=useReducer(reducer,initialData);
-  
+ console.log(state)
  
 
   return (
