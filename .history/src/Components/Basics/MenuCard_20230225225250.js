@@ -1,0 +1,36 @@
+import React from 'react'
+
+const MenuCard = ({ menuData }) => {
+    console.log(menuData)
+    return (
+        <>
+            <section className='main-card-container'>
+                {menuData.map((currElem) => {
+                    
+          return (
+            <>
+              <div className="card-container">
+                <div className="card ">
+                  <div className="card-body">
+                    <span className="card-number card-circle subtle"></span>
+                    <span className="card-author subtle"> </span>
+                    <h2 className="card-title">  </h2>
+                    <span className="card-description subtle">
+                     
+                    </span>
+                    <div className="card-read">Read</div>
+                  </div>
+                  <img src={image} alt="images" className="card-media" />
+
+                  <span className="card-tag  subtle">Order Now</span>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </section>
+    </>
+  );
+};
+
+export default MenuCard;
